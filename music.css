@@ -1,0 +1,153 @@
+.menu{
+	display: flex;
+	line-height: 6vh;
+}
+.header{
+	background-color: rgb(60, 60, 60);
+}
+.menu a{
+	text-decoration: none;
+	outline: none;
+	padding: 5px;
+	color: white;
+	justify-content: space-around;
+	margin: 8px;
+}
+.menu a:hover{
+	color: orange;
+	transform: scaleX(1.2);
+}
+.cont{
+	margin-top: 0;
+	min-height: 200vh;
+	width: 100%;
+	height: 230px;
+}
+.cng{
+	line-height: 13rem;
+	color: white;
+	text-align: center;
+	font-size: xx-large;
+}
+.im{
+	color: white;
+	text-align: center;
+}
+#tet{
+	color: white;
+	padding: 10px;
+	font-family: "Nirmala UI",monospace;
+}
+
+.con{
+	text-align: center;
+}
+.fa{
+	padding-right: 5px;
+}
+.text1{
+	font-family:  "Courier New", monospace;
+}
+.btn{
+	color: white;
+	border: 1px;
+	border-radius: 3px;
+	outline: none;
+	padding: 15px;
+	background-color: red;
+	cursor: pointer;
+}
+.btn:hover{
+	background-color: dimgrey;
+	transform: scale(1.0);
+}
+.container button{
+	margin-bottom: 13px;
+}
+.container img{
+	margin-bottom: 30px;
+}
+.imt{
+	font-family:  "Courier New", monospace;
+
+}
+.bt{
+	color: white;
+	border: 1px;
+	border-radius: 3px;
+	outline: none;
+	padding: 15px;
+	background-color: darkblue;
+	cursor: pointer;
+}
+.bt:hover{
+	background-color: dimgrey;
+	transform: scaleX(1.1);
+}
+.decent{
+	color: white;
+	text-align: center;
+	min-height: 80vh;
+}
+.decent h1{
+	line-height: 10rem;
+}
+.decent h3{
+	font-family:  "Courier New", monospace;
+}
+.do{
+	display: flex;
+}
+.do h2{
+	font-family: cursive;
+}
+#did{
+	font-family: "Courier New", monospace;
+	padding-left: 7rem;
+}
+.te1{
+	text-decoration: none;
+	cursor: pointer;
+	color: #103063;
+}
+.foote{
+	max-width: 1150px;
+	margin: 0 auto;
+	padding: 3rem;
+	text-align: center;
+}
+.foot{
+	display: grid;
+	grid-gap: 18px;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: left;
+	padding: 2rem;
+	font-size: 15px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+	display: block;
+	padding-inline-start: 40px;
+	margin-block-end: 1em;
+	margin-block-start: 1em;
+	margin-inline-start:0px;
+	margin-inline-end:0px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.foot1{
+	background-color: rgb(60, 60, 60);
+}
+.foot1 h3{
+	color: white;
+
+	text-align: center;
+	font-family: "PT Sans", sans-serif;
+	margin-bottom: 0;
+	padding: 7px;
+
+}
