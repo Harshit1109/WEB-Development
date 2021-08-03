@@ -1,0 +1,119 @@
+/*#fo{
+	font-family:  "Courier New", monospace;
+	color: #FFFFFF;
+	margin-left: 35px;
+	display: inline-block;
+	cursor: pointer;
+}*/
+body{
+	height: 400px;
+	width: 99.5%;
+	margin: 2px;
+}
+.date{
+	
+	color: #808080;
+	
+}
+.header{
+	width: 100%;
+	background-color: #333;
+	min-height: 70vh;
+
+}
+.header1{
+	width: 100%;
+	background-color: #333;
+	min-height: 20vh;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+}
+.head{
+	margin: 30px;
+}
+.menu1 a{
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	font-size: small;
+	text-transform: uppercase;
+}
+.menu1{
+	line-height: 7rem;
+    right: 0;
+}
+.container{
+	
+	display: flex;
+	padding: .4rem;
+	justify-content: space-between;
+
+}
+.header h2{
+	text-align: center;
+	color: #fff;
+	
+	margin-top: 20px;
+}
+.header h5{
+	font-size: large;
+	color: grey;
+	margin-top: 0;
+	line-height: 30px;
+}
+.container h1{
+	color: white;
+	font-family: sans-serif;
+	margin-left: 1.4rem;
+	text-transform: uppercase;
+	font-family: Microsoft YaHei UI Light, sans-serif;
+}
+.menu{
+	line-height: 7rem;
+}
+.menu a{
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	font-size: large;
+	text-transform: uppercase;
+}
+.menu a:hover{
+	color: orange;
+}
+.container h1:hover{
+	transform: scaleX(1.2);
+	color: orange;
+}
+
+.btn{
+	color: white;
+	padding: 20px;
+	border-radius: 5px;
+	background: transparent;
+	border: 1px solid white;
+	outline: none;
+	cursor: pointer;
+	margin-bottom:7px ;
+	font-size: medium;
+	text-transform: uppercase;
+}
+.btn:hover{
+	background-color: white;
+	color: orange;
+	transform: scale(1.2);
+}
+.gallery{
+	display: flex;
+	margin: 15px;
+}
+.img1
+{
+	margin: 40px;
+	cursor: pointer;
+}
+
+.img1 h3:hover{
+	color: orange;
+}
