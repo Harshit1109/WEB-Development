@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <title>Digital Clock</title>
+    <style>
+        .box{
+            align-items: center;
+            width: 50%;
+            height: 50;
+            background-color: rgb(86, 216, 86);
+            color: rgb(63, 38, 38);
+            margin-left: 10vh;
+        }
+        .box p{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+        }
+        .box button{
+            background: rgb(156, 99, 156);
+            color: rgb(18, 19, 20);
+            padding: 8px;
+            margin: 20px;
+            border: none;
+            opacity: 0.9;
+        }
+        .box button :hover{
+            background-color: transparent;
+        }
+    </style>
+<body>
+    <div class="box" align="center">
+        <h3 style="padding-top: 20px;">Hii, My name is DigiClock.</h3>
+        <br>
+        <p>
+            Have a look on CurrentTime..?
+            <button onclick="show()" id="press">Click me</button>
+            <!-- <button onclick="ringAlarm()" id="ring"><i class="fa fa-bell" aria-hidden="true"></i> Alarm</button> -->
+        </p>
+    </div>
+    <script>
+        var noon = 12;
+        // var alarm = 8;
+        var show = function(){
+            var digi = document.getElementById('press'); 
+            var clock  = new Date();
+            var Days = ['Sun','Mon','Tues','Wednes','Thurs','Fri','Sat'];
+            var hours = clock.getHours();
+            var minutes = clock.getMinutes();
+            var seconds = clock.getSeconds();
+            var day  = clock.getDay();
+            var dayname = Days[day];
+            var meridian = 'AM';
+            if(hours>=noon){
+                meridian = 'PM'
+            }
+            if(hours> noon){
+                hours = hours -12;
+            }
+            if(minutes<10){
+                minutes= "0"+minutes;
+            }
+            if(seconds<10){
+                seconds= "0"+seconds;
+            }
+            // var time = hours+':'+ minutes +":" + seconds +" " + meridian; 
+            var clocktime = dayname +" "+ hours+':'+ minutes +":" + seconds +" " + meridian;
+            digi.innerText = clocktime;
+            setInterval(show,1000);
+        };
+       
+        // var ringAlarm = function(){
+        //     var alarm1 = document.getElementById('ring');
+        //     var clock = new Date();
+        //     var hours = clock.getHours();
+        //     document.write(alarm);
+        //     // if(hours==alarm){
+        //     // var play = <iframe width="420" height="345" src="https://www.youtube.com/watch?v=NS3LDad32_c"></iframe>
+        //     // alarm1.innerText = play;
+        //     }
+        // // };
+    </script>
+</body>
+</html>
