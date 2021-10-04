@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<style>
+		.main{
+			box-shadow:-8px 8px 7px -1px #000;
+			padding: 8px;
+			margin: 2rem;
+			width: 15%;
+			border: 1px solid darkgray;
+			background-color: #0a4b78;
+			opacity: 1;
+
+		}
+		.space input{
+			width: 86%;
+		}
+		input[type="button"] {
+            border-radius: 10px;
+            background-color:black;
+            color: white;
+            padding: 5px;
+            cursor: pointer;
+            text-indent: 18px;
+            margin: 5px;
+        }
+	</style>
+</head>
+<body>
+	<div class="main">Please Enter the Numbers
+		<form class="calculatorDevice" name="calculatorDevice">
+			<div class="space">
+				<input type="text" name="space">
+			</div>
+			<div class="btn">
+				<input type="button" class="numbers" value="1" onclick="valBtn(this)">
+				<input type="button" class="numbers" value="2" onclick="valBtn(this)">
+				<input type="button" class="numbers" value="3" onclick="valBtn(this)">
+				<input type="button" class="numbers" name="plus" value="+" onclick="valBtn(this)">
+			</div>
+			<div class="btn">
+				<input type="button" class="numbers" value="4" onclick="valBtn(this)">
+				<input type="button" class="numbers" value="5" onclick="valBtn(this)">
+				<input type="button" class="numbers" value="6" onclick="valBtn(this)">
+				<input type="button" class="numbers" name="sub" value="-" onclick="valBtn(this)">
+			</div>
+			<div class="btn">
+				<input type="button" class="numbers" value="7" onclick="valBtn(this)">
+				<input type="button" class="numbers" value="8" onclick="valBtn(this)">
+				<input type="button" class="numbers" value="9" onclick="valBtn(this)">
+				<input type="button" class="numbers" value="*" onclick="valBtn(this)">
+			</div>
+			<div class="btn">
+				<input type="button" class="numbers" value="0" onclick="valBtn(this)">
+				<input type="button" class="numbers" value="/" onclick="valBtn(this)">
+				<input type="button" class="numbers" value="=" onclick="Evaluate()">
+				<input type="button" class="numbers" value="C" onclick="Clear()"> </div>
+		</form>
+	</div>
+	<script>
+		function Clear() {
+			calculatorDevice.space.value = null;
+		}
+		function valBtn(val) {
+			calculatorDevice.space.value+=val.value;
+		}
+		function Evaluate(){
+			calculatorDevice.space.value = eval(calculatorDevice.space.value);
+		}
+	</script>
+</body>
+</html>
